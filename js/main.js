@@ -3,12 +3,12 @@
 $(document).ready(function () {
     $('#count-sum').click(function () {
         var sumSalary = $('.salary');
-        var wynik = 0;
+        var result = 0;
         for (var i = 0; i < sumSalary.length; i++) {
             var changeStr = sumSalary[i].innerHTML;
             var valInt = parseInt(changeStr);
-            var wynik = wynik += valInt;
+            var result = result += valInt;
         }
-        $('#sum').text(wynik);
+        $('#sum').text(result);
     });
 });
